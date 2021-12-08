@@ -1,4 +1,4 @@
-/*------------------СБОРЩИК-------------------*/
+/*------------------СБОРЩИК СТРАНИЦЫ ПОРТФОЛИО-------------------*/
 /*Глобальные переменные, миксины и т.п.*/
 @import "./utils/variables";
 @import "./utils/hidden";
@@ -14,9 +14,5 @@
 /*Макет*/
 @import "./layout/header";
 @import "./layout/logo";
-@import "./layout/hero";
-@import "./layout/specials";
-@import "./layout/services";
-@import "./layout/team";
-@import "./layout/clients";
+@import "./layout/portfolio";
 @import "./layout/footer";
