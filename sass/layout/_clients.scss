@@ -27,12 +27,13 @@
   border-radius: 4px;
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--color-decor);
+    border-color: var(--color-decor);
+  }
 }
-.client-link:hover,
-.client-link:focus {
-  color: var(--color-decor);
-  border-color: var(--color-decor);
-}
+
 .client-svg {
   fill: currentColor;
 }

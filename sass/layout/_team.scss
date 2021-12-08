@@ -64,13 +64,13 @@
   color: var(--bg-icon);
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--color-decor);
+    color: var(--bg-main);
+  }
 }
 .team-svg {
   display: flex;
   fill: currentColor;
-}
-.team-icons-link:hover,
-.team-icons-link:focus {
-  background-color: var(--color-decor);
-  color: var(--bg-main);
 }
