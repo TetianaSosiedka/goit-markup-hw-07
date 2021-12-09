@@ -1,57 +1,32 @@
-.portfolio-list-btns {
+.portfolio__button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
   font-family: inherit;
 }
-.portfolio-item {
+.portfolio__button-item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
-.portfolio-btn {
-  padding: 6px 22px;
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-headlines);
-  background-color: var(--bg-section-decor);
-  cursor: pointer;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--color-headlines-second);
-    background-color: var(--color-decor);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-.portfolio-cards {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
-.portfolio-card-item {
+.portfolio__item {
   flex-basis: calc((100% - 3 * 32px) / 3);
   margin: 15px;
   transition: transform 250ms var(--timing-function);
 }
 
-.portfolio-card-link {
+.product {
   position: relative;
   display: block;
   width: 100%;
   border: 1px solid #eeeeee;
   background-color: var(--bg-main);
   transition: box-shadow 250ms var(--timing-function);
-}
-.portfolio-card-link {
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -59,15 +34,16 @@
     cursor: pointer;
   }
 }
-.portfolio-card-action {
+
+.produck__details {
   position: relative;
   overflow: hidden;
 }
-.portfolio-card-img {
+.product__img {
   display: block;
   width: 100%;
 }
-.portfolio-card-overlay {
+.product__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,12 +52,12 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
-  .portfolio-card-link:hover &,
-  .portfolio-card-link:focus & {
+  .product:hover &,
+  .product:focus & {
     transform: translateY(0);
   }
 }
-.portfolio-card-description {
+.product__description {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,23 +67,23 @@
   color: var(--bg-main);
   opacity: 0;
   transition: opacity 450ms var(--timing-function);
-  .portfolio-card-link:hover &,
-  .portfolio-card-link:focus & {
+  .product:hover &,
+  .product:focus & {
     opacity: 1;
   }
 }
 
-.portfolio-card-board {
+.product__board {
   padding: 20px 24px;
 }
-.portfolio-card-title {
+.product__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-card-desc {
+.product__direction {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

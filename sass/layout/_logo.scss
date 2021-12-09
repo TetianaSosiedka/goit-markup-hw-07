@@ -6,7 +6,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  & > .logo-decor {
+  &__colored-part {
     color: var(--color-decor);
   }
+}
+.logo--light {
+  color: var(--color-headlines-second);
 }
