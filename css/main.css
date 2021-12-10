@@ -305,10 +305,10 @@ body {
 }
 
 .header__nav {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -369,11 +369,19 @@ body {
   color: var(--color-headlines-second);
 }
 
+.title {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-align: center;
+}
+
 .contacts-list {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   display: flex;
 }
 
@@ -403,11 +411,11 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-  font-family: inherit;
+  text-align: center;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--color-headlines);
   background-color: var(--bg-section-decor);
   cursor: pointer;
@@ -434,36 +442,29 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.title--light {
+  color: var(--color-headlines-second);
+}
+
+.title__hero {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-headlines-second);
 }
 
-.hero-btn {
+.button__hero {
   padding: 10px 32px;
-  border: none;
-  border-radius: 4px;
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
-  text-align: center;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--color-headlines-second);
   background-color: var(--color-decor);
-  cursor: pointer;
   transition: background-color 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.button__hero:hover, .button__hero:focus {
   background-color: var(--color-decor-second);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }

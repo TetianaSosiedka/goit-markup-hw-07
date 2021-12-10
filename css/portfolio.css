@@ -305,10 +305,10 @@ body {
 }
 
 .header__nav {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -369,11 +369,19 @@ body {
   color: var(--color-headlines-second);
 }
 
+.title {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-align: center;
+}
+
 .contacts-list {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   display: flex;
 }
 
@@ -403,11 +411,11 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-  font-family: inherit;
+  text-align: center;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--color-headlines);
   background-color: var(--bg-section-decor);
   cursor: pointer;
@@ -506,16 +514,17 @@ body {
 
 .product__title {
   margin-bottom: 4px;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 
 .product__direction {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--color-text);
 }
 

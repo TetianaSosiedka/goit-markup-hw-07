@@ -15,31 +15,23 @@
   background-position: center;
   background-size: cover;
 }
-.hero-title {
+.title--light {
+  color: var(--color-headlines-second);
+}
+.title__hero {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-headlines-second);
 }
-.hero-btn {
+.button__hero {
   padding: 10px 32px;
-  border: none;
-  border-radius: 4px;
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
-  text-align: center;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--color-headlines-second);
   background-color: var(--color-decor);
-  cursor: pointer;
   transition: background-color 250ms var(--timing-function),
     filter 250ms var(--timing-function);
   &:hover,
