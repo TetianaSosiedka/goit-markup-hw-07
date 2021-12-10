@@ -1,14 +1,4 @@
-.clients-title {
-  margin-bottom: 50px;
-  font-family: var(--font-main);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-headlines);
-}
-.clients-list {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px -15px;
@@ -17,7 +7,7 @@
   flex-basis: calc((100% - 6 * 32px) / 6);
   margin: 0 15px 15px;
 }
-.client-link {
+.client-item__link {
   display: flex;
   width: 100%;
   padding: 16px 0;
@@ -34,6 +24,6 @@
   }
 }
 
-.client-svg {
+.client-item__svg {
   fill: currentColor;
 }

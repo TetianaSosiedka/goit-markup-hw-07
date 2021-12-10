@@ -15,15 +15,15 @@
   background-position: center;
   background-size: cover;
 }
-.title--light {
-  color: var(--color-headlines-second);
-}
 .title__hero {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+.title__hero--font-size {
+  @include font($fs: 44px, $lh: 1.36, $ls: 0.06em, $fw: 900);
 }
 .button__hero {
   padding: 10px 32px;

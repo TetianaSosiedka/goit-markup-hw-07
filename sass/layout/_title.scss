@@ -1,4 +1,11 @@
 .title {
-  @include font($fs: 44px, $lh: 1.36, $ls: 0.06em, $fw: 900);
+  @include font($fs: 36px, $lh: 1.17, $ls: 0.03em, $fw: 700);
   text-align: center;
+  color: var(--color-headlines);
+}
+.title--margin-bottom {
+  margin-bottom: 50px;
+}
+.title--light {
+  color: var(--color-headlines-second);
 }

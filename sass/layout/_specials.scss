@@ -3,25 +3,20 @@
   flex-wrap: wrap;
   margin: -15px;
 }
-.special-item {
+.special-wrap {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin: 15px;
 }
-.specials-icon {
+.special-wrap__icon {
   display: flex;
   width: 100%;
   margin-bottom: 30px;
 }
-.special-title {
+.special-wrap__title {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font($fs: 14px, $lh: 1.14, $ls: 0.03em, $fw: 700);
   text-transform: uppercase;
 }
-.special-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.special-wrap__text {
+  @include font($fs: 14px, $lh: 1.71, $ls: 0.03em);
 }

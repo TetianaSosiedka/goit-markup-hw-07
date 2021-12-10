@@ -1,15 +1,7 @@
-.services.section {
+.services {
   padding-top: 0;
 }
-.services-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.services-list {
+.services__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -19,21 +11,17 @@
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin: 15px;
 }
-.services-img {
+.services-item__img {
   display: block;
 }
-.services-caption {
+.services-item__caption {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 27px 0;
-  font-family: var(--font-main);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font($fs: 14px, $lh: 1.14, $ls: 0.03em, $fw: 700);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bg-main);
   background-color: rgba(47, 48, 58, 0.8);

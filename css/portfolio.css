@@ -370,11 +370,20 @@ body {
 }
 
 .title {
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   text-align: center;
+  color: var(--color-headlines);
+}
+
+.title--margin-bottom {
+  margin-bottom: 50px;
+}
+
+.title--light {
+  color: var(--color-headlines-second);
 }
 
 .contacts-list {
@@ -526,6 +535,43 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--color-text);
+}
+
+.icons-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-gallery--margin-bottom {
+  margin-bottom: 30px;
+}
+
+.icons-gallery__item {
+  margin: 0 5px;
+  height: 44px;
+  width: 44px;
+}
+
+.icons-gallery__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--bg-icon);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+}
+
+.icons-gallery__link:hover, .icons-gallery__link:focus {
+  background-color: var(--color-decor);
+  color: var(--bg-main);
+}
+
+.icons-gallery__svg {
+  display: flex;
+  fill: currentColor;
 }
 
 .footer {
