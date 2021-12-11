@@ -111,7 +111,7 @@ body {
   transform: scale(0.5) translate(1000px);
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -127,63 +127,61 @@ body {
   cursor: pointer;
 }
 
-.modal-button:hover, .modal-button:focus {
+.modal__button:hover, .modal__button:focus {
   transform: rotate(90deg);
 }
 
-.modal-button-icon {
+.modal__button-icon {
   fill: #000000;
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
+.modal__button:hover .modal__button-icon,
+.modal__button:focus .modal__button-icon {
   fill: var(--color-decor);
 }
 
-.modal-title {
+.modal__title {
   padding-bottom: 12px;
-  font-family: var(--font-main);
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
   color: var(--color-headlines);
 }
 
-.modal-form-part {
-  font-family: var(--font-main);
+.contact-form__item {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: var(--color-text);
 }
 
-.input-wrap {
+.contact-form__input-wrap {
   display: block;
   position: relative;
 }
 
-.modal-form-field {
+.contact-form__field {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 11px 11px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-family: var(--font-main);
   font-size: 16px;
   color: #000000;
   transition: border-color 250ms var(--timing-function);
 }
 
-.modal-form-field:focus {
+.contact-form__field:focus {
   outline: none;
   border-color: var(--color-decor);
 }
 
-.modal-user-icon {
+.contact-form__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -191,11 +189,11 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-form-field:focus + .modal-user-icon {
+.contact-form__field:focus + .contact-form__icon {
   fill: var(--color-decor);
 }
 
-.modal-form-text {
+.contact-form__field--size {
   margin-bottom: 20px;
   padding: 12px 16px;
   height: 120px;
@@ -203,26 +201,26 @@ body {
   overflow: auto;
 }
 
-.modal-form-text::placeholder {
-  font-family: var(--font-main);
+.contact-form__field--size::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-check {
+.contact-form__check-item {
   display: inline-flex;
   align-items: baseline;
   margin-bottom: 30px;
-  font-family: var(--font-main);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--color-text);
 }
 
-.check-wrap {
+.contact-form__check-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,24 +235,24 @@ body {
   transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.modal-check-icon {
+.contact-form__check-icon {
   fill: var(--bg-main);
 }
 
-.modal-check:checked + .check-wrap {
+.contact-form__check:checked + .contact-form__check-wrap {
   border: none;
   box-shadow: none;
   background-color: var(--color-decor);
 }
 
-.modal-link-agree {
+.contact-form__link-agree {
   position: relative;
   color: var(--color-decor);
   outline: none;
   line-height: 100%;
 }
 
-.modal-link-agree::after {
+.contact-form__link-agree::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -266,20 +264,19 @@ body {
   transition: transform 250ms var(--timing-function);
 }
 
-.modal-link-agree:hover::after, .modal-link-agree:focus::after {
+.contact-form__link-agree:hover::after, .contact-form__link-agree:focus::after {
   transform: scaleX(0);
 }
 
-.modal-form-button {
+.contact-form__button {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 55px;
-  font-family: var(--font-main);
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  font-weight: 700;
   color: var(--bg-main);
   background: var(--color-decor);
   transition: background-color 250ms var(--timing-function);
@@ -289,7 +286,7 @@ body {
   cursor: pointer;
 }
 
-.modal-form-button:hover, .modal-form-button:focus {
+.contact-form__button:hover, .contact-form__button:focus {
   background-color: var(--color-decor-second);
   outline: none;
 }
