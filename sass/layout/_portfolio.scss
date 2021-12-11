@@ -19,7 +19,11 @@
   margin: 15px;
   transition: transform 250ms var(--timing-function);
 }
-
+.portfolio__button {
+  padding: 6px 22px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
 .product {
   position: relative;
   display: block;

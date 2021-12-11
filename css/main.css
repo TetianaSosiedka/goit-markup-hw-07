@@ -73,6 +73,22 @@ body {
   padding-bottom: 94px;
 }
 
+.curent {
+  color: var(--color-decor);
+  position: relative;
+}
+
+.curent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-decor);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -269,26 +285,8 @@ body {
 }
 
 .contact-form__button {
-  display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 55px;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  color: var(--bg-main);
-  background: var(--color-decor);
-  transition: background-color 250ms var(--timing-function);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-.contact-form__button:hover, .contact-form__button:focus {
-  background-color: var(--color-decor-second);
-  outline: none;
 }
 
 /*Макет*/
@@ -330,22 +328,6 @@ body {
 
 .header__nav-link:hover, .header__nav-link:focus {
   color: var(--color-decor);
-}
-
-.curent {
-  color: var(--color-decor);
-  position: relative;
-}
-
-.curent::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-decor);
 }
 
 .logo {
@@ -414,24 +396,50 @@ body {
 }
 
 .button {
-  padding: 6px 22px;
+  display: flex;
+  padding: 10px 55px;
   border-radius: 4px;
   border: none;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  color: var(--color-headlines);
-  background-color: var(--bg-section-decor);
   cursor: pointer;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  outline: none;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  color: var(--color-headlines-second);
+  background-color: var(--color-decor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .button:hover, .button:focus {
+  background-color: var(--color-decor-second);
+}
+
+.button--bold-font {
+  font-weight: 700;
+}
+
+.button--light {
+  color: var(--color-headlines);
+  background-color: var(--bg-section-decor);
+  box-shadow: none;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+
+.button--light:hover, .button--light:focus {
   color: var(--color-headlines-second);
   background-color: var(--color-decor);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button__icon {
+  fill: var(--bg-main);
+}
+
+.button__icon--right {
+  margin-left: 10px;
 }
 
 .hero {
@@ -448,7 +456,7 @@ body {
   background-size: cover;
 }
 
-.title__hero {
+.hero__title {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -456,25 +464,25 @@ body {
   text-transform: uppercase;
 }
 
-.title__hero--font-size {
+.hero__title--font-size {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   font-weight: 900;
 }
 
-.button__hero {
+.hero__button {
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 32px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--color-headlines-second);
-  background-color: var(--color-decor);
+  box-shadow: none;
   transition: background-color 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
 
-.button__hero:hover, .button__hero:focus {
-  background-color: var(--color-decor-second);
+.hero__button:hover, .hero__button:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -773,37 +781,8 @@ body {
 }
 
 .subscribe-form__button {
-  display: flex;
   align-items: center;
   width: 200px;
   padding: 10px 28px;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: var(--color-decor);
-  transition: background-color 250ms var(--timing-function);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  outline: none;
-}
-
-.subscribe-form__button:hover, .subscribe-form__button:focus {
-  background-color: var(--color-decor-second);
-}
-
-.subscribe-form__button--left-text {
-  text-align: left;
-}
-
-.subscribe-form__icon {
-  fill: var(--bg-main);
-}
-
-.subscribe-form__icon--margin-left {
-  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
